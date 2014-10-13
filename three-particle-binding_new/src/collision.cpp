@@ -489,8 +489,9 @@ printf("number of collision: %d of particles %d and %d at node:%d\n", number_of_
   	       // We need all cyclical permutations, here 
                // (bond is placed on 1st particle, order of bond partners
   	       // does not matter, so we don't neet non-cyclic permutations):
-               coldet_do_three_particle_bond(P,p1,p2);
-               coldet_do_three_particle_bond(p2,P,p1);
+  		 coldet_do_three_particle_bond(P,p1,p2);
+  		 coldet_do_three_particle_bond(p2,P,p1);
+  		 coldet_do_three_particle_bond(p1,p2,P);
              } // loop over particles
            } // Cell loop
 

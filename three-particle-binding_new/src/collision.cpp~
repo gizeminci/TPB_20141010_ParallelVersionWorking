@@ -135,7 +135,7 @@ void detect_collision(Particle* p1, Particle* p2)
   if ((p1->p.isVirtual) || (p2->p.isVirtual))
     return;
 #endif
-printf("particle %d collide to particle %d with distance %f at node %d\n", part1, part2, dist_betw_part, this_node);
+//printf("particle %d collide to particle %d with distance %f at node %d\n", part1, part2, dist_betw_part, this_node);
   // Check, if there's already a bond between the particles
   // First check the bonds of p1
   if (p1->bl.e) {
